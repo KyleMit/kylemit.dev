@@ -12,6 +12,9 @@ section {
     padding-top: 60px;
     margin-top: -60px;
 }
+#Contact {
+	margin-bottom: 0px;
+}
 .justify {
     text-align: justify;
 }
