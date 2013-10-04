@@ -11,9 +11,6 @@
     <link href="Styles/Site.css" rel="stylesheet" />
 	<link rel="shortuct icon" type="image/png" href="favicon.png" />
 	<link rel="shortcut icon" type="image/png" href="http://www.kylemitofsky.com/favicon.png" />
-    <script src="Scripts/jquery-1.9.1.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/Site.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -27,9 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#Home">
-                <img src="Images/Logo32.png" alt="logo"/>
-            </a>
+            <a class="navbar-brand icon_logo v_middle" href="#Home"></a>
         </div>
 
         <!-- Nav Bar Links -->
@@ -45,14 +40,14 @@
 
     <!-- Sections -->
     <div id="Content" >
-
+		<!-- Home -->
         <section id="Home">
-            <h1 class="hero">Kyle Mitofsky</h1>
-            <img src="Images/Portrait.png" width="100" alt="portrait"/>
+            <h1 class="page_header">Kyle Mitofsky</h1>
+			<div class="icon_portrait"></div>
             <br/>
             <h3>Currently...</h3>
-            <p class="job">Vermont Department of Health</p>
-            <p class="job">Systems Developer II</p>
+            <p class="bold">Vermont Department of Health</p>
+            <p class="bold">Systems Developer II</p>
             <ul>
                 <li>Develop full stack web and windows applications</li>
                 <li>Presentations on WPF, WCF, ASP.NET, and Win8 applications</li>
@@ -62,6 +57,7 @@
             
         </section>
 
+		<!-- About -->
         <section id="About">
             <h1>About Me</h1>
             <p class="justify">
@@ -71,10 +67,11 @@
             	within the workplace or local coding community.</p>
         </section>
 
+		<!-- Resume -->
         <section id="Resume">
             <h1>Resume</h1>
-            <p class="job">Vermont Department of Health</p>
-            <p class="job">Systems Developer I</p>
+            <p class="bold">Vermont Department of Health</p>
+            <p class="bold">Systems Developer I</p>
             <ul>
                 <li>Develop web and windows applications</li>
                 <li>Design and modify Software Architecture Documents</li>
@@ -82,29 +79,36 @@
             </ul>
         </section>
 
+		<!-- Projects -->
         <section id="Projects">
             <h1>Projects</h1>
             
             <p>Some places I like to visit on the internet:</p>
             <div>
-                <a href="http://codingeverything.blogspot.com/">
-                    <img src="http://i.imgur.com/flvWrcT.png" title="CodingEverything.Blogspot.com" alt="Blogger"/>
+                <a href="http://codingeverything.blogspot.com/"
+				   title="CodingEverything.Blogspot.com" 
+				   class="icon_blogger">
                 </a>
-                <a href="https://github.com/KyleMit">
-                    <img src="http://i.imgur.com/ZKLNDJZ.png" title="GitHub.com/KyleMit" alt="GitHub"/>
+                <a href="https://github.com/KyleMit"
+				   title="GitHub.com/KyleMit"
+				   class="icon_git">
                 </a>
-                <a href="http://jsfiddle.net/user/KyleMit/fiddles/" >
-                    <img src="http://i.imgur.com/AGK6bGV.png" title="jsFiddle.net/User/KyleMit/Fiddles" alt="jsFiddle"/>
+                <a href="http://jsfiddle.net/user/KyleMit/fiddles/" 
+				   title="jsFiddle.net/User/KyleMit/Fiddles"
+				   class="icon_fiddle">
                 </a>
-                <a href="http://stackoverflow.com/users/1366033/kylemit" >
-                    <img src="http://i.imgur.com/E6wWSKN.png" title="StackOverflow.com/Users/1366033/KyleMit" alt="StackOverflow"/>
+                <a href="http://stackoverflow.com/users/1366033/kylemit" 
+				   title="StackOverflow.com/Users/1366033/KyleMit"
+				   class="icon_stack">
                 </a>
-                <a href="https://twitter.com/Kylemit2" >
-                    <img src="http://i.imgur.com/J4j1vWR.png" title="@KyleMit2" alt="Twitter"/>
+                <a href="https://twitter.com/Kylemit2"
+				   title="@KyleMit2"
+				   class="icon_twitter">
                 </a>
             </div>
             <br/>
-            <p><strong>Chrome Copy Tabs</strong> is an Chrome Extension which adds all the currently selected links 
+            <p><strong>Chrome Copy Tabs</strong> is an Chrome Extension which 
+				adds all the currently selected links 
                 in Chrome to your clipboard so they can be easily saved later.
                 The source code and application are available below.
             </p>
@@ -112,7 +116,8 @@
                 <li><a href="https://chrome.google.com/webstore/detail/copy-tabs/efmfdbcopjfmgoefenohhlcplheclbeo">Chrome Web Store</a></li>
                 <li><a href="https://github.com/KyleMit/ChromeCopyTabs">GitHub</a></li>
             </ul>
-            <p><strong>Word Guesser</strong> is a Windows 8 application, in which you try to determine a secret word by
+            <p><strong>Word Guesser</strong> is a Windows 8 application, in which 
+				you try to determine a secret word by
                 guessing other words that come before or after it alphabetically.
                 The source code and application are available below.
             </p>
@@ -121,11 +126,20 @@
                 <li><a href="https://github.com/KyleMit/WordGuess">GitHub</a></li>
             </ul>
         </section>
-
+		
+		<!-- Contact -->
         <section id="Contact">
             <h1>Contact Me</h1>
-            <p><img title="Phone" src="Images/phone.png" width="35" alt="phone" />&nbsp;<span class="phone">(802) 793-6498</span></p>
-            <p><img title="Email" src="Images/email.png" width="40" alt="email" /><a href="mailto:Kyle@KyleMitofsky.com?subject=I liked your homepage!">Kyle@KyleMitofsky.com</a></p>
+			
+            <p class="bold">
+				<div title="Phone" class="icon_phone v_middle"></div>
+				<strong>(802) 793-6498</strong></p>
+            <p>
+				<div title="Email" class="icon_email v_middle"></div>
+				<a href="mailto:Kyle@KyleMitofsky.com?subject=I liked your homepage!">
+					Kyle@KyleMitofsky.com
+				</a>
+			</p>
             <address>
                 <strong>Kyle Mitofsky</strong><br/>
                 20 Grant Street Apt 6<br/>
@@ -135,7 +149,14 @@
         </section>
 
     </div>
+	
+	<!-- Border Gradient -->
 	<div class="backgroundGradient leftGradient"></div>
 	<div class="backgroundGradient rightGradient"></div>
+	
+	<!-- Scripts -->
+	<script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/Site.js"></script>
 </body>
 </html>

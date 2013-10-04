@@ -19,17 +19,23 @@ section {
 #Contact {
 	margin-bottom: 0px;
 }
-.justify {
-    text-align: justify;
+.navbar-brand {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
-.hero {
+.page_header {
     font-size: 3em;
 }
-.phone {
+.bold {
     font-weight: bold;
 }
-.job {
-    font-weight: bold;
+.v_middle {
+	vertical-align: middle;
+}
+.justify {
+    text-align: justify;
 }
 /* ================= MEDIA QUERIES ======================*/
 /* Large desktop */
@@ -73,4 +79,59 @@ section {
 .rightGradient {
     right: 0px;
     background: url(../Images/bkg_gradient_right.png);
+}
+/* ================= SPRITES ======================*/
+.icon_email, .icon_phone, .icon_logo, .icon_blogger, .icon_stack, .icon_twitter, .icon_web, .icon_fiddle, .icon_portrait, .icon_git {
+	background: url(../Images/sprites.png) no-repeat;
+	display: inline-block;
+}
+.icon_email {
+	background-position: 0 0;
+	width: 40px;
+	height: 40px;
+}
+.icon_phone {
+	background-position: -43px 0;
+	width: 35px;
+	height: 35px;
+}
+.icon_logo {
+	background-position: -85px -3px ;
+	width: 32px;
+	height: 32px;
+}
+.icon_blogger {
+	background-position: -1px -52px ;
+	width: 58px;
+	height: 58px;
+}
+.icon_stack {
+	background-position: -61px -52px ;
+	width: 58px;
+	height: 58px;
+}
+.icon_twitter {
+	background-position: -122px -52px ;
+	width: 58px;
+	height: 58px;
+}
+.icon_web {
+	background-position: -182px -52px ;
+	width: 58px;
+	height: 58px;
+}
+.icon_fiddle {
+	background-position: -243px -52px ;
+	width: 58px;
+	height: 58px;
+}
+.icon_portrait {
+	background-position: 0 -118px ;
+	width: 107px;
+	height: 100px;
+}
+.icon_git {
+	background-position: -304px -52px ;
+	width: 58px;
+	height: 58px;
 }
