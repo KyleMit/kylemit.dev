@@ -1,11 +1,15 @@
-﻿body {
+﻿/* =================== PAGE ========================*/
+body {
     background-image: url("../Images/mochaGrunge.png");
     padding-top: 60px;
+	z-index: -2;
+	position: relative;
 }
 #Content {
     width: 640px;
     margin: 0 auto;
     background-image: url("../Images/witewall_3.png");
+	z-index: 1;
 }
 section {
     margin: 20px;
@@ -27,6 +31,7 @@ section {
 .job {
     font-weight: bold;
 }
+/* ================= MEDIA QUERIES ======================*/
 /* Large desktop */
 @media (min-width: 1200px) {
 
@@ -51,4 +56,21 @@ section {
     #Content {
         width: 100%;
     }
+}
+/* ================= BACKGROUND ======================*/
+.backgroundGradient {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 137px;
+	z-index: -1;
+	background-repeat: repeat-y;
+}
+.leftGradient {
+    left: 0px;
+    background: url(../Images/bkg_gradient_left.png);
+}
+.rightGradient {
+    right: 0px;
+    background: url(../Images/bkg_gradient_right.png);
 }
