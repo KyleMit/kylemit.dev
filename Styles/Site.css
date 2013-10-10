@@ -2,61 +2,80 @@
 body {
     background-image: url("../Images/mochaGrunge.png");
     padding-top: 60px;
-	z-index: -2;
-	position: relative;
+    z-index: -2;
+    position: relative;
 }
+
 #Content {
     width: 640px;
     margin: 0 auto;
     background-image: url("../Images/witewall_3.png");
-	z-index: 1;
+    z-index: 1;
 }
+
 section {
     margin: 20px;
     padding-top: 60px;
     margin-top: -60px;
 }
+
+hr {
+    background-color: #444;
+    height: 2px;
+    page-break-after: always;
+    text-align: center;
+    width: 95%;
+}
+
 #Contact {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 .navbar-brand {
-	margin-top: 15px;
-	margin-bottom: 5px;
-	margin-left: 10px;
-	margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .page_header {
     font-size: 3em;
 }
+
 .bold {
     font-weight: bold;
 }
+
 .v_middle {
-	vertical-align: middle;
+    vertical-align: middle;
 }
+
+.h_center {
+    text-align: center;
+}
+
 .justify {
     text-align: justify;
 }
 /* ================= MEDIA QUERIES ======================*/
 /* Large desktop */
 @media (min-width: 1200px) {
-
 }
- 
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 800px) {
     #Content {
         width: 80%;
     }
 }
- 
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
     #Content {
         width: 90%;
     }
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
     #Content {
@@ -65,73 +84,92 @@ section {
 }
 /* ================= BACKGROUND ======================*/
 .backgroundGradient {
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	width: 137px;
-	z-index: -1;
-	background-repeat: repeat-y;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 137px;
+    z-index: -1;
+    background-repeat: repeat-y;
 }
+
 .leftGradient {
     left: 0px;
     background: url(../Images/bkg_gradient_left.png);
 }
+
 .rightGradient {
     right: 0px;
     background: url(../Images/bkg_gradient_right.png);
 }
 /* ================= SPRITES ======================*/
 .icon_email, .icon_phone, .icon_logo, .icon_blogger, .icon_stack, .icon_twitter, .icon_web, .icon_fiddle, .icon_portrait, .icon_git {
-	background: url(../Images/sprites.png) no-repeat;
-	display: inline-block;
+    background: url(../Images/sprites.png) no-repeat;
+    display: inline-block;
 }
+
 .icon_email {
-	background-position: 0 0;
-	width: 40px;
-	height: 40px;
+    background-position: 0 0;
+    width: 40px;
+    height: 40px;
 }
+
 .icon_phone {
-	background-position: -43px 0;
-	width: 35px;
-	height: 35px;
+    background-position: -43px 0;
+    width: 35px;
+    height: 35px;
 }
+
 .icon_logo {
-	background-position: -85px -3px ;
-	width: 32px;
-	height: 32px;
+    background-position: -85px -3px;
+    width: 32px;
+    height: 32px;
 }
+
 .icon_blogger {
-	background-position: -1px -52px ;
-	width: 58px;
-	height: 58px;
+    background-position: -1px -52px;
+    width: 58px;
+    height: 58px;
 }
+
 .icon_stack {
-	background-position: -61px -52px ;
-	width: 58px;
-	height: 58px;
+    background-position: -61px -52px;
+    width: 58px;
+    height: 58px;
 }
+
 .icon_twitter {
-	background-position: -122px -52px ;
-	width: 58px;
-	height: 58px;
+    background-position: -122px -52px;
+    width: 58px;
+    height: 58px;
 }
+
 .icon_web {
-	background-position: -182px -52px ;
-	width: 58px;
-	height: 58px;
+    background-position: -182px -52px;
+    width: 58px;
+    height: 58px;
 }
+
 .icon_fiddle {
-	background-position: -243px -52px ;
-	width: 58px;
-	height: 58px;
+    background-position: -243px -52px;
+    width: 58px;
+    height: 58px;
 }
+
 .icon_portrait {
-	background-position: 0 -118px ;
-	width: 107px;
-	height: 100px;
+    background-position: 0 -118px;
+    width: 107px;
+    height: 100px;
 }
+
 .icon_git {
-	background-position: -304px -52px ;
-	width: 58px;
-	height: 58px;
+    background-position: -304px -52px;
+    width: 58px;
+    height: 58px;
+}
+/* ================= NO JS ======================*/
+#DesktopMobileFooter {
+    display: none;
+}
+.jsEnabled #DesktopMobileFooter {
+    display: block;
 }
