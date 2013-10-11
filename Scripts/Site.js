@@ -8,7 +8,7 @@
         $('body').addClass('jsEnabled');
 
         //add touch enabled class
-        if (window.hasOwnProperty('ontouchstart')) {
+        if ('ontouchstart' in window) {
             $('body').addClass('touchEnabled');
         }
 
