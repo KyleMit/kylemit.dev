@@ -2,6 +2,11 @@
     //add java script enabled class
     $('body').addClass('jsEnabled');
 
+    //add touch enabled class
+    if ('ontouchstart' in window) {
+        $('body').addClass('touchEnabled');
+    }
+
     // activate scroll spy
     $('body').scrollspy({
         target: '#SiteNavBar'
@@ -35,12 +40,15 @@
 function navigateToElement(pageLink) {
     // get href attribute
     var idSelector = $(pageLink).attr('href');
-    // scroll down page
-    scrollToElement(idSelector);
-    // reset url hash
-    setHash(idSelector);
-    // return false so we don't refresh
-    //return false;
+    // make sure we have a valid id
+    if ($(idSelector).length > 0) {
+        // scroll down page
+        scrollToElement(idSelector);
+        // reset url hash
+        setHash(idSelector);
+        // return false so we don't refresh
+        //return false;    
+    }
 }
 
 function scrollToElement(idSelector) {

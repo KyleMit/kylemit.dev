@@ -57,6 +57,7 @@ hr {
 .justify {
     text-align: justify;
 }
+
 /* ================= MEDIA QUERIES ======================*/
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -82,6 +83,7 @@ hr {
         width: 100%;
     }
 }
+
 /* ================= BACKGROUND ======================*/
 .backgroundGradient {
     position: absolute;
@@ -101,6 +103,7 @@ hr {
     right: 0px;
     background: url(../Images/bkg_gradient_right.png);
 }
+
 /* ================= SPRITES ======================*/
 .icon_email, .icon_phone, .icon_logo, .icon_blogger, .icon_stack, .icon_twitter, .icon_web, .icon_fiddle, .icon_portrait, .icon_git {
     background: url(../Images/sprites.png) no-repeat;
@@ -166,10 +169,11 @@ hr {
     width: 58px;
     height: 58px;
 }
+
 /* ================= NO JS ======================*/
 #DesktopMobileFooter {
     display: none;
 }
-.jsEnabled #DesktopMobileFooter {
+.touchEnabled #DesktopMobileFooter {
     display: block;
 }
