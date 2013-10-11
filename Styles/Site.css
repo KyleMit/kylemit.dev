@@ -28,7 +28,7 @@ hr {
 }
 
 #Contact {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -87,20 +87,20 @@ hr {
 /* ================= BACKGROUND ======================*/
 .backgroundGradient {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
+    top: 0;
+    bottom: 0;
     width: 137px;
     z-index: -1;
     background-repeat: repeat-y;
 }
 
 .leftGradient {
-    left: 0px;
+    left: 0;
     background: url(../Images/bkg_gradient_left.png);
 }
 
 .rightGradient {
-    right: 0px;
+    right: 0;
     background: url(../Images/bkg_gradient_right.png);
 }
 
