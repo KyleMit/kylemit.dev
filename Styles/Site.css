@@ -173,6 +173,7 @@ hr {
 /* ================= NO JS ======================*/
 #DesktopMobileFooter {
     display: none;
+    padding-bottom: 10px;
 }
 .touchEnabled #DesktopMobileFooter {
     display: block;
