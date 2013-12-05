@@ -91,6 +91,7 @@ ClientBin
 ~$*
 *.dbmdl
 *thumbs.db
+*Thumbs.db
 Generated_Code #added for RIA/Silverlight projects
 
 
