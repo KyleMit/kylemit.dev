@@ -39,7 +39,27 @@
             return false;
         });
 
+        $("#ViewResume").click(function() {
+            //showPdfDialog();
+        });
     });
+    
+    function showPdfDialog() {
+        var src = "http://docs.google.com/gview?embedded=true&url=";
+        var pdf = "http://kylemitofsky.com/Content/KyleMitofskyResume.pdf";
+        $('<div/>')
+            .html('<embed class="fullFrame" src="' +
+                       pdf + '"></embed>')
+            .dialog({
+                autoOpen: true,
+                modal: true,
+                height: 600,
+                width: function() {
+                    return Math.min(600, window.innerWidth - 10);
+                },
+                title: "Resume"
+            });
+    }
 
     function navigateToElement(pageLink) {
         // get href attribute

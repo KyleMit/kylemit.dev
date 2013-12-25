@@ -5,20 +5,11 @@ body {
     z-index: -2;
     position: relative;
 }
-
-#Content {
-    width: 640px;
-    margin: 0 auto;
-    background-image: url("../Images/witewall_3.png");
-    z-index: 1;
-}
-
 section {
     margin: 20px;
     padding-top: 60px;
     margin-top: -60px;
 }
-
 hr {
     background-color: #444;
     height: 2px;
@@ -27,37 +18,54 @@ hr {
     width: 95%;
 }
 
+#Content {
+    width: 640px;
+    margin: 0 auto;
+    background-image: url("../Images/witewall_3.png");
+    z-index: 1;
+}
 #Contact {
     margin-bottom: 0;
 }
+#portrait {
+    margin-right: 10px;
+}
 
+.well {
+    border-width: 1px;
+}
+.top-position {
+    margin-top: 0;
+}
 .navbar-brand {
     margin-top: 15px;
     margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .page_header {
     font-size: 3em;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .v_middle {
     vertical-align: middle;
 }
-
 .h_center {
     text-align: center;
 }
-
 .justify {
     text-align: justify;
 }
-
+.clear {
+    clear: both;
+}
+.fullFrame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 /* ================= MEDIA QUERIES ======================*/
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -178,3 +186,4 @@ hr {
 .touchEnabled #DesktopMobileFooter {
     display: block;
 }
+

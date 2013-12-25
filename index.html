@@ -7,8 +7,9 @@
     <!--[if lt IE 9]>
           <script src="Scripts/HTML5Shiv.js"></script>
      <![endif]-->
-    <link href="Styles/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="Styles/Site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Styles/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
+    <link rel="stylesheet" href="Styles/Site.css" />
     <link rel="shortuct icon" type="image/png" href="favicon.png" />
     <link rel="shortcut icon" type="image/png" href="http://www.kylemitofsky.com/favicon.png" />
     <meta name="description" 
@@ -29,7 +30,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand icon_logo v_middle" href="#Home"></a>
+            <a class="navbar-brand icon_logo v_middle" href="#About"></a>
         </div>
 
         <!-- Nav Bar Links -->
@@ -46,42 +47,72 @@
     <!-- Sections -->
     <div id="Content" >
         <!-- Home -->
-        <section id="Home">
-            <h1 class="page_header">Kyle Mitofsky</h1>
-            <div class="icon_portrait"></div>
-            <br/>
-            <h3>Currently...</h3>
-            <p class="bold">Vermont Department of Health</p>
-            <p class="bold">Systems Developer II</p>
-            <ul>
-                <li>Develop full stack web and windows applications</li>
-                <li>Presentations on WPF, WCF, ASP.NET, and Win8 applications</li>
-                <li>Build with Visual Studio, ASP.NET, WPF, WinForms</li>
-            </ul>
-            <p>For past job info, scroll down to <a href="#Resume">Resume</a></p>
-            
-        </section>
-
-        <!-- About -->
         <section id="About">
-            <h1>About Me</h1>
-            <p class="justify">
-                I've been developing software applications for the 
-                Vermont Department of Health for a little over a year and a half.  
-                I like to talk about new software technologies and methodologies 
-                within the workplace or local coding community.</p>
+            <h1 class="page_header ">Kyle Mitofsky</h1>
+            <div id="portrait" class="icon_portrait pull-left"></div>
+            <p class="justify ">
+                I've been developing software applications for the
+                Vermont Department of Health for a little over a year and a half.
+                I like to talk about new software technologies and methodologies
+                within the workplace or local coding community.
+            </p>
+            <div class="clear"></div>
         </section>
 
         <!-- Resume -->
         <section id="Resume">
             <h1>Resume</h1>
-            <p class="bold">Vermont Department of Health</p>
-            <p class="bold">Systems Developer I</p>
-            <ul>
-                <li>Develop web and windows applications</li>
-                <li>Design and modify Software Architecture Documents</li>
-                <li>Work with source control systems to manage projects</li>
-            </ul>
+           
+            <div class="well">
+                <div class="top-position">
+                    <h4 class="pull-left">Systems Developer II</h4>
+                    <h5 class="pull-right">2013-Present</h5>
+                    <div class="clear"></div>
+                </div>
+                <p class="bold">Vermont Department of Health</p>
+                <ul>
+                    <li>Develop full stack web and windows applications in ASP.NET, WinForms, and WPF</li>
+                    <li>Research, review, and implement best practices for web design and usability</li>
+                    <li>Manage deployments to test and production environments</li>
+                    <li>Review software and database architecture documents as part of Team Lead Review</li>
+                    <li>Participate in Agile development methodologies</li>
+                    <li>Implemented first use of client side JavaScript libraries to prevent extra server trips</li>
+                    <li>Implemented first use of unit testing projects for better code maintenance</li>
+                </ul>
+            </div>
+
+            <div class="well">
+                <div class="top-position">
+                    <h4 class="pull-left">Systems Developer I</h4>
+                    <h5 class="pull-right">2012-2013</h5>
+                    <div class="clear"></div>
+                </div>
+                <p class="bold">Vermont Department of Health</p>
+                <ul>
+                    <li>Developed and maintained web and windows applications</li>
+                    <li>Utilized SQL queries to preform CRUD operations on MS SQL Server database</li>
+                    <li>Worked with source control systems to manage code base</li>
+                    <li>Implemented first WPF application using MVVM pattern and created template for use on future applications</li>
+                </ul>
+            </div>
+            <div class="well">
+                <div class="top-position">
+                    <h4 class="pull-left">Research Assistant</h4>
+                    <h5 class="pull-right">2010-2013</h5>
+                    <div class="clear"></div>
+                </div>
+                <p class="bold">Economics Department, UVM</p>
+                <ul>
+                    <li>Programmed using statistical analysis tools like STATA, R, and Excel VBA</li>
+                    <li>Created high quality graphs, reports, and summaries of data</li>
+                </ul>
+            </div>
+
+            <a id="ViewResume" title="View Resume" href="Content/KyleMitofskyResume.pdf">
+                <img src="http://i.imgur.com/h07NjPd.png" alt="Resume"
+                     width="25" height="25" />
+                View Full Resume
+            </a>
         </section>
 
         <!-- Projects -->
@@ -179,7 +210,8 @@
     <div class="backgroundGradient rightGradient"></div>
     
     <!-- Scripts -->
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/Site.js"></script>
 </body>
