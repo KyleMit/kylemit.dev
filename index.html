@@ -7,8 +7,9 @@
     <!--[if lt IE 9]>
           <script src="Scripts/HTML5Shiv.js"></script>
      <![endif]-->
-    <link rel="stylesheet" href="Styles/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css" />
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="Styles/Site.css" />
     <link rel="shortuct icon" type="image/png" href="favicon.png" />
     <link rel="shortcut icon" type="image/png" href="http://www.kylemitofsky.com/favicon.png" />
@@ -124,10 +125,9 @@
                     <li>Created high quality graphs, reports, and summaries of data</li>
                 </ul>
             </div>
-
+            
+            <i class="fa fa-file-pdf-o"></i>
             <a id="ViewResume" title="View Resume" href="Content/KyleMitofskyResume.pdf">
-                <img src="http://i.imgur.com/h07NjPd.png" alt="Resume"
-                     width="25" height="25" />
                 View Full Resume
             </a>
         </section>
@@ -135,33 +135,46 @@
         <!-- Projects -->
         <section id="Projects">
             <h1>Projects</h1>
-            
+
             <p>Some places I like to visit on the internet:</p>
-            <div>
-                <a href="http://codingeverything.blogspot.com/"
-                   title="CodingEverything.Blogspot.com" 
-                   class="icon_blogger">
-                </a>
-                <a href="https://github.com/KyleMit"
-                   title="GitHub.com/KyleMit"
-                   class="icon_git">
-                </a>
-                <a href="http://jsfiddle.net/user/KyleMit/fiddles/" 
-                   title="jsFiddle.net/User/KyleMit/Fiddles"
-                   class="icon_fiddle">
-                </a>
-                <a href="http://stackoverflow.com/users/1366033/kylemit" 
-                   title="StackOverflow.com/Users/1366033/KyleMit"
-                   class="icon_stack">
-                </a>
-                <a href="https://twitter.com/Kylemit2"
-                   title="@KyleMit2"
-                   class="icon_twitter">
-                </a>
-            </div>
-            <br/>
-            <p class="justify"><strong>Chrome Copy Tabs</strong> is an Chrome Extension which 
-                adds all the currently selected links 
+            <ul class="fa-ul">
+                <li>
+                    <i class="fa fa-code fa-li"></i>
+                    <a href="http://www.codingeverything.com/" >
+                        CodingEverything.com
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-stack-overflow fa-li"></i>
+                    <a href="http://stackoverflow.com/users/1366033/kylemit">
+                        StackOverflow.com/Users/1366033/KyleMit
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-github fa-li"></i>
+                    <a href="https://github.com/KyleMit" >
+                        GitHub.com/KyleMit
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-jsfiddle fa-li"></i>
+                    <a href="http://jsfiddle.net/user/KyleMit/fiddles/" >
+                        jsFiddle.net/User/KyleMit/Fiddles
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa fa-twitter fa-li"></i>
+                    <a href="https://twitter.com/Kylemit2" >
+                        @KyleMit2
+                    </a>
+                </li>
+            </ul>
+
+            <br />
+            <p class="justify">
+                <strong>Chrome Copy Tabs</strong> is an Chrome Extension which
+                adds all the currently selected links
                 in Chrome to your clipboard so they can be easily saved later.
                 The source code and application are available below.
             </p>
@@ -169,7 +182,8 @@
                 <li><a href="https://chrome.google.com/webstore/detail/copy-tabs/efmfdbcopjfmgoefenohhlcplheclbeo">Chrome Web Store</a></li>
                 <li><a href="https://github.com/KyleMit/ChromeCopyTabs">GitHub</a></li>
             </ul>
-            <p class="justify"><strong>Word Guesser</strong> is a Windows 8 application, in which 
+            <p class="justify">
+                <strong>Word Guesser</strong> is a Windows 8 application, in which
                 you try to determine a secret word by
                 guessing other words that come before or after it alphabetically.
                 The source code and application are available below.
@@ -178,7 +192,8 @@
                 <li><a href="http://apps.microsoft.com/windows/en-us/app/b85001c1-0782-4d4a-af96-caf23d56806e">Windows Store</a></li>
                 <li><a href="https://github.com/KyleMit/WordGuess">GitHub</a></li>
             </ul>
-            <p class="justify"><strong>Windows Runtime MVVM Template</strong> is a bare bones starter template 
+            <p class="justify">
+                <strong>Windows Runtime MVVM Template</strong> is a bare bones starter template
                 for Windows Store 8.1 Projects that Utilizes the Model View View Model Pattern.  It integrates with
                 the Visual Studio Add Project dialog to easily create new projects with helpful utility classes.
             </p>
@@ -192,21 +207,27 @@
         <section id="Contact">
             <h1>Contact Me</h1>
             
-            <p class="bold">
-                <span title="Phone" class="icon_phone v_middle" style="margin-right: 5px;"></span>
-                <strong>(802) 793-6498</strong></p>
-            <p>
-                <span title="Email" class="icon_email v_middle"></span>
-                <a href="mailto:Kyle@KyleMitofsky.com?subject=I%20liked%20your%20homepage!">
-                    Kyle@KyleMitofsky.com
-                </a>
-            </p>
-            <address>
-                <strong>Kyle Mitofsky</strong><br/>
-                20 Grant Street Apt 6<br/>
-                Burlington, VT 05401<br/>
-            </address>
-            <br/>
+            <div class="row extra-row-space">
+                <div class="col-xs-1 text-right"><i class="fa fa-phone fa-lg"></i></div>
+                <div class="col-xs-10">(802) 793-6498</div>
+            </div>
+            <div class="row extra-row-space">
+                <div class="col-xs-1 text-right"><i class="fa fa-envelope fa-lg"></i></div>
+                <div class="col-xs-10">
+                    <a href="mailto:Kyle@KyleMitofsky.com?subject=I%20liked%20your%20homepage!">
+                        Kyle@KyleMitofsky.com
+                    </a>
+                </div>
+            </div>
+            <div class="row extra-row-space">
+                <div class="col-xs-1 text-right"><i class="fa fa-home fa-lg"></i></div>
+                <div class="col-xs-10">
+                    <address>
+                        14B Saint Louis Street <br />
+                        Burlington, VT 05401
+                    </address>
+                </div>
+            </div>
         </section>
 
         <!-- Desktop / Mobile Footer -->
@@ -229,7 +250,7 @@
     <!-- Scripts -->
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="Scripts/Site.js"></script>
 </body>
 </html>

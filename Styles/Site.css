@@ -66,6 +66,9 @@ hr {
     height: 100%;
     border: 0;
 }
+.extra-row-space {
+    margin-top: 5px;
+}
 /* ================= MEDIA QUERIES ======================*/
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -186,4 +189,26 @@ hr {
 .touchEnabled #DesktopMobileFooter {
     display: block;
 }
+/* ================= ICON COLORS ======================*/
+
+.fa-file-pdf-o {
+    color: #BB0706
+}
+.fa-code {
+    color: #FF9434
+}
+.fa-stack-overflow {
+    color: #7E2812;
+}
+.fa-github {
+    color: #2C2443
+}
+.fa-jsfiddle {
+    color: #002060
+}
+.fa-twitter {
+    color: #00ABF0
+}
+
+
 
