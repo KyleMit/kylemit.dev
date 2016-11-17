@@ -168,17 +168,15 @@ hr {
     width: 58px;
     height: 58px;
 }
-
-.icon_portrait {
-    background-position: 0 -118px;
-    width: 107px;
-    height: 100px;
-}
-
 .icon_git {
     background-position: -304px -52px;
     width: 58px;
     height: 58px;
+}
+
+
+.icon_portrait {
+    width: 200px;
 }
 
 /* ================= NO JS ======================*/
