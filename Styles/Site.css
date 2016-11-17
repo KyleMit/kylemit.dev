@@ -116,7 +116,7 @@ hr {
 }
 
 /* ================= SPRITES ======================*/
-.icon_email, .icon_phone, .icon_logo, .icon_blogger, .icon_stack, .icon_twitter, .icon_web, .icon_fiddle, .icon_portrait, .icon_git {
+.icon_email, .icon_phone, .icon_logo, .icon_blogger, .icon_stack, .icon_twitter, .icon_web, .icon_fiddle, .icon_git {
     background: url(../Images/sprites.png) no-repeat;
     display: inline-block;
 }
