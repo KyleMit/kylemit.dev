@@ -1,8 +1,4 @@
-kylemit.github.com
-==================
+# Personal Homepage for Kyle Mitofsky
 
-Personal Home Page for Kyle Mitofsky
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f4688e2a-64c3-4acf-b99b-2499b18924a4/deploy-status)](https://app.netlify.com/sites/kylemit/deploys)
 
-Hosted At:     [github.com/KyleMit/](https://github.com/KyleMit/kylemit.github.com)  
-Hosted At:     [kylemit.github.io](http://kylemit.github.io/)  
-Redirected To: [kylemitofsky.com](http://kylemitofsky.com/)  
