@@ -1,3 +1,7 @@
+--- 
+title: Kyle Mitofsky Homepage
+description: Personal bio and some links to other places I exist on the interwebs
+---
 <!doctype html>
 <html lang="en">
 
@@ -5,6 +9,33 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+
+        {# Theme color for browser chrome (chrome android) #}
+        <meta name="theme-color" content="#4934eb">
+
+        {% set css %}
+        {% include "styles.css" %}
+        {% endset %}
+
+        {# Primary Meta Tags #}
+        <title>{{title}}</title>
+        <meta name="title" content="{{title}}">
+        <meta name="description" content="{{description}}">
+        <link rel="canonical" href="{{page.url}}">
+
+        {# Open Graph / Facebook #}
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{page.url}}">
+        <meta property="og:title" content="{{title}}">
+        <meta property="og:description" content="{{description}}">
+        <meta property="og:image" content="assets/thumbnail.png">
+
+        {# Twitter #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@KyleMitBTV">
+        <meta name="twitter:title" content="{{title}}">
+        <meta name="twitter:description" content="{{description}}">
+        <meta name="twitter:image" content="assets/thumbnail.png">
 
         {# capture the CSS content as a Nunjucks variable #}
         {% set css %}{% include "styles.css" %}{% endset %}
