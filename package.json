@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Personal homepage for Kyle Mitofsky",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://KyleMit@github.com/KyleMit/kylemit.git"
