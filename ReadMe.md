@@ -19,4 +19,5 @@ npm run build
 
 * [11ty - Installing 11ty](https://www.11ty.io/docs/getting-started/#step-2%3A-install-eleventy)
 * [11ty - Passthrough Assets](https://www.11ty.io/docs/copy/#manual-passthrough-copy-(faster))
+* [11ty - Inline Minified CSS](https://www.11ty.io/docs/quicktips/inline-css/)
 * [Extensions - Nunjucks Ext. Pack](https://marketplace.visualstudio.com/items?itemName=douglaszaltron.nunjucks-vscode-extensionpack)
