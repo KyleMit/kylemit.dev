@@ -78,6 +78,9 @@ typings/
 # vuepress build output
 .vuepress/dist
 
+# eleventy output
+_site
+
 # Serverless directories
 .serverless/
 

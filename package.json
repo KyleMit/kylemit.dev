@@ -1,0 +1,21 @@
+{
+  "name": "kylemit.dev",
+  "version": "1.0.0",
+  "description": "Personal homepage for Kyle Mitofsky",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://KyleMit@github.com/KyleMit/kylemit.git"
+  },
+  "keywords": [],
+  "author": "KyleMit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KyleMit/kylemit/issues"
+  },
+  "homepage": "https://github.com/KyleMit/kylemit#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3"
+  }
+}
