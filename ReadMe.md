@@ -18,3 +18,4 @@ npm run build
 ## Resources
 
 * [11ty - Installing 11ty](https://www.11ty.io/docs/getting-started/#step-2%3A-install-eleventy)
+* [Extensions - Nunjucks Ext. Pack](https://marketplace.visualstudio.com/items?itemName=douglaszaltron.nunjucks-vscode-extensionpack)
