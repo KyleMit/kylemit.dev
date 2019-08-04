@@ -1,3 +1,19 @@
-.social a>svg {
+#social a>svg {
     height: 60px;
 }
+.profile {
+    height: 100px;
+}
+
+
+.bio {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "profile title"
+                         "profile bio";
+}
+
+.profile   { grid-area: profile; }
+.job-title { grid-area: title; }
+.bio-text  { grid-area: bio; }
