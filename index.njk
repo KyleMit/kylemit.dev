@@ -1,29 +1,42 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" > 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+        <style>
+            .social a > svg {
+                height: 60px;
+            }
+        </style>
+    </head>
 
-</head>
+    <body class="{{title}}">
 
-<body class="{{title}}">
+        <nav class="header"></nav>
 
+        <main class="content">
+            <h2>Kyle Mitofsky</h2>
 
-    <nav class="header">
-       
-    </nav>
+            <section class="social">
+                <h3>Social</h3>
+                <a href="https://stackoverflow.com/users/1366033" aria-label="Stack Overflow Profile">
+                    {% include "stack-overflow.svg" %}
+                </a>
+                <a href="https://github.com/KyleMit" aria-label="Github Profile">
+                    {% include "github.svg" %}
+                </a>
+                <a href="https://twitter.com/KyleMitBTV" aria-label="Twitter Profile">
+                    {% include "twitter.svg" %}
+                </a>
+                <a href="https://www.linkedin.com/in/kylemit/" aria-label="LinkedIn Profile">
+                    {% include "linkedin.svg" %}
+                </a>
+            </section>
+        </main>
 
-    <main class="content">
-        <h2>Kyle Mitofsky</h2>
-    
-    </main>
-
-
-    <footer class="footer">
-
-    </footer>
-</body>
+        <footer class="footer"></footer>
+    </body>
 
 </html>
