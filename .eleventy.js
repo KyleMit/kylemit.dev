@@ -10,4 +10,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
+
+  // add full year calc with JS
+  eleventyConfig.addFilter("getYear", function(code) {
+    return new Date().getFullYear();
+  });
 };

@@ -40,16 +40,22 @@ description: Personal bio and some links to other places I exist on the interweb
             {{css | cssmin | safe}}
         </style>
 
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     </head>
 
     <body class="{{title}}">
 
-        <nav class="header"></nav>
+        <nav class="header">
+            <div class="logo">
+
+            </div>
+            <a href="http://www.codingeverything.com/">Blog</a>
+        </nav>
 
         <main class="content">
 
             <section id="about">
-                <h1>Kyle Mitofsky</h1>
+                <h1 class="page-title">Kyle Mitofsky</h1>
                 <div class="bio">
                     <img src="assets/profile.jpg" class="profile"/>
                     <h2 class="job-title">Full-Stack Web Developer</h2>
@@ -59,23 +65,28 @@ description: Personal bio and some links to other places I exist on the interweb
                 </div>
             </section>
             <section id="social">
-                <h3>Social</h3>
-                <a href="https://stackoverflow.com/users/1366033" aria-label="Stack Overflow Profile">
-                    {% include "stack-overflow.svg" %}
-                </a>
-                <a href="https://github.com/KyleMit" aria-label="Github Profile">
-                    {% include "github.svg" %}
-                </a>
-                <a href="https://twitter.com/KyleMitBTV" aria-label="Twitter Profile">
-                    {% include "twitter.svg" %}
-                </a>
-                <a href="https://www.linkedin.com/in/kylemit/" aria-label="LinkedIn Profile">
-                    {% include "linkedin.svg" %}
-                </a>
+                <ul class="social-links">
+                    <li><a href="https://stackoverflow.com/users/1366033" class="stack-overflow" aria-label="Stack Overflow Profile">
+                        {% include "stack-overflow.svg" %}
+                    </a></li>
+                    <li><a href="https://github.com/KyleMit" class="github" aria-label="Github Profile">
+                        {% include "github.svg" %}
+                    </a></li>
+                    <li><a href="https://twitter.com/KyleMitBTV" class="twitter" aria-label="Twitter Profile">
+                        {% include "twitter.svg" %}
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/kylemit/" class="linkedin" aria-label="LinkedIn Profile">
+                        {% include "linkedin.svg" %}
+                    </a></li>
+                </ul>
+
             </section>
         </main>
 
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <span>Kyle Mitofsky &copy; {{ "" | getYear}}</span>
+            <a href="mailto:kylemit@gmail.com">Contact</a>
+        </footer>
     </body>
 
 </html>

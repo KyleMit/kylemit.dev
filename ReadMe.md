@@ -32,5 +32,8 @@ npm run build
 * [11ty - Inline Minified CSS](https://www.11ty.io/docs/quicktips/inline-css/)
 * [11ty - Frontmatter](https://www.11ty.io/docs/data-frontmatter/)
 * [Nunjucks - Set Variable](https://mozilla.github.io/nunjucks/templating.html#set)
+* [Nunjucks - Get Date using JS](https://github.com/mozilla/nunjucks/issues/419#issuecomment-97016572)
 * [CSS - Complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/#grid-introduction)
+* [SVG - Convert relative path to Absolute](https://codepen.io/thednp/pen/EgVqLw)
 * [VS Code - Nunjucks Extension Pack](https://marketplace.visualstudio.com/items?itemName=douglaszaltron.nunjucks-vscode-extensionpack)
+* [Fonts - Rubik](https://fonts.google.com/?selection.family=Rubik)
