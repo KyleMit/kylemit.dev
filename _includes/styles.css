@@ -15,17 +15,46 @@ h1,h2,h3,h4 {
 
 .header {
     background: #3686d4;
-    padding: 10px;
-  }
-  .header a {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-content {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+.header a {
     color: #edf6ff;
-  }
+    font-size: 1.2em;
+    padding: .5em;
+}
 
 main.content {
     max-width: 40rem;
     margin: 0 auto;
 }
 
+.footer {
+    background: #383838;
+    color: whitesmoke;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: #cde6ff;
+    /* font-size:1.2em; */
+    padding: .5em;
+}
 
 /* bio */
 
@@ -61,7 +90,29 @@ main.content {
     font-size: 1.2em;
 }
 
+/* navbar */
+.logo {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-left: .5rem;
+}
 
+.logo svg {
+    position: absolute;
+}
+.logo-keyboard svg {
+    fill: white;
+}
+.logo-cat svg {
+    margin-top: -5px;
+    height: 45px;
+}
+.logo-keyboard svg {
+    margin-top: 16px;
+    height: 40px;
+}
 
 /* social */
 ul.social-links {

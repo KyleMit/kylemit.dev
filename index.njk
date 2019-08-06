@@ -46,10 +46,14 @@ description: Personal bio and some links to other places I exist on the interweb
     <body class="{{title}}">
 
         <nav class="header">
-            <div class="logo">
-
+            <div class="header-content">
+                <span class="logo">
+                    <span class="logo-keyboard">{% include "keyboard.svg" %}</span>
+                    <span class="logo-cat">{% include "cat.svg" %}</span>
+                </span>
+                <span class="spacer"></span>
+                <a href="http://www.codingeverything.com/">Blog</a>
             </div>
-            <a href="http://www.codingeverything.com/">Blog</a>
         </nav>
 
         <main class="content">
@@ -84,8 +88,10 @@ description: Personal bio and some links to other places I exist on the interweb
         </main>
 
         <footer class="footer">
-            <span>Kyle Mitofsky &copy; {{ "" | getYear}}</span>
-            <a href="mailto:kylemit@gmail.com">Contact</a>
+            <div class="footer-content">
+                <span>Kyle Mitofsky &copy; {{ "" | getYear}}</span>
+                <a href="mailto:kylemit@gmail.com">Contact</a>
+            </div>
         </footer>
     </body>
 
