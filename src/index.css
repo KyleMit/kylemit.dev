@@ -2,9 +2,16 @@ html, body {
     padding: 0;
     margin: 0;
 }
-body, #container {
+body {
     height: 100vh;
 }
-h1 {
+#container {
+    height: calc(100vh - 50px);
+}
+header {
+    height: 50px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

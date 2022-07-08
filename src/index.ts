@@ -12,7 +12,7 @@ let editor = monaco.editor.create(document.getElementById('container')!, {
 		enabled: false
   },
   theme: "vs-dark",
-
+  readOnly: 'ontouchstart' in document.documentElement
 });
 
 
