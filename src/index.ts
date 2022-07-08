@@ -13,7 +13,8 @@ let editor = monaco.editor.create(document.getElementById('container')!, {
 		enabled: false
   },
   theme: "vs-dark",
-  readOnly: 'ontouchstart' in document.documentElement
+  readOnly: 'ontouchstart' in document.documentElement,
+  automaticLayout: true
 });
 
 // toggle theme
@@ -22,6 +23,3 @@ themeChk.addEventListener('change', (e) => {
   monaco.editor.setTheme(themeChk.checked ? 'vs-dark' : 'vs-light');
 })
 
-
-// resize on resize
-window.onresize = () => editor.layout();

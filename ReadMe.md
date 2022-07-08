@@ -20,5 +20,5 @@ Personal bio and some links to other places I exist on the interwebs
   * linkedin
 * is dirty indicator
 * preview
-
+* loading styles
 
