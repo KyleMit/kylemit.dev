@@ -16,6 +16,7 @@ let editor = monaco.editor.create(document.getElementById('container')!, {
   readOnly: 'ontouchstart' in document.documentElement
 });
 
+// toggle theme
 const themeChk = document.getElementById("theme") as HTMLInputElement
 themeChk.addEventListener('change', (e) => {
   monaco.editor.setTheme(themeChk.checked ? 'vs-dark' : 'vs-light');

@@ -1,12 +1,13 @@
 html, body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 body {
     height: 100vh;
 }
 #container {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 74px);
 }
 header {
     height: 50px;
@@ -14,6 +15,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+footer {
+    height: 24px;
+    background-color: #007acc;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
 }
 .toggle {
     position: absolute;
