@@ -1,25 +1,28 @@
 {
   "name": "kylemit.dev",
   "version": "1.0.0",
-  "description": "Personal homepage for Kyle Mitofsky",
-  "main": "index.js",
+  "description": "Personal bio and some links to other places I exist on the interwebs",
+  "dependencies": {
+  },
   "scripts": {
-    "build": "npx eleventy",
-    "serve": "npx eleventy --serve"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "vite": "^2.9.14",
+    "vite-plugin-monaco-editor": "^1.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://KyleMit@github.com/KyleMit/kylemit.git"
+    "url": "git+https://github.com/KyleMit/kylemit.dev.git"
   },
-  "keywords": [],
-  "author": "KyleMit",
-  "license": "ISC",
+  "keywords": ["monaco", "vite", "kylemit", "bio"],
+  "author": "kylemit",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KyleMit/kylemit/issues"
+    "url": "https://github.com/KyleMit/kylemit.dev/issues"
   },
-  "homepage": "https://github.com/KyleMit/kylemit#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.8.3",
-    "clean-css": "^4.2.1"
-  }
+  "homepage": "https://github.com/KyleMit/kylemit.dev#readme"
 }
