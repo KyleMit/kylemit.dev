@@ -5,9 +5,11 @@ import about from "./index.md?raw"
 import aboutSm from "./index-sm.md?raw"
 
 const converter = new showdown.Converter();
+const content = window.innerWidth > 700 ? about : aboutSm;
+
 
 const editor = monaco.editor.create(document.getElementById('container')!, {
-  value: window.innerWidth > 700 ? about : aboutSm,
+  value: content,
   language: 'markdown',
   wordWrap: 'on',
   fontSize: 18,
@@ -36,3 +38,9 @@ previewCheck.addEventListener('change', (e) => {
   const html = converter.makeHtml(md)
   previewPane.innerHTML = html
 })
+
+editor?.getModel()?.onDidChangeContent((event) => {
+  const val = editor.getValue()
+  const isDirty = val != content
+  document.body.classList.toggle("is-dirty", isDirty)
+});

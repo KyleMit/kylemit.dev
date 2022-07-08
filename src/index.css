@@ -28,6 +28,11 @@ header {
 .preview #preview-pane {
     display: block;
 }
+main#preview-pane {
+    padding: 0 16px;
+    max-width: 50rem;
+    margin: 0 auto;
+}
 footer {
     height: 24px;
     background-color: #007acc;
@@ -65,4 +70,10 @@ footer a {
     align-self: center;
     gap: 6px;
     line-height: 0.9;
+}
+.dirty-indicator {
+    display: none;
+}
+.is-dirty .dirty-indicator {
+    display: inline;
 }
