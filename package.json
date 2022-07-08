@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vscode/codicons": "^0.0.31",
     "typescript": "^4.7.4",
     "vite": "^2.9.14",
     "vite-plugin-monaco-editor": "^1.1.0"
@@ -16,7 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/KyleMit/kylemit.dev.git"
   },
-  "keywords": ["monaco", "vite", "kylemit", "bio"],
+  "keywords": [
+    "monaco",
+    "vite",
+    "kylemit",
+    "bio"
+  ],
   "author": "kylemit",
   "license": "MIT",
   "bugs": {
