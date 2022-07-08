@@ -40,7 +40,7 @@ main#preview-pane {
     max-width: 50rem;
     margin: 0 auto;
 }
-.vs-dark #preview-pane {
+.vs-dark {
   color: rgb(212, 212, 212);
   background-color: #1e1e1e;
 }
