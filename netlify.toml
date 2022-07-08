@@ -1,6 +1,0 @@
-[build]
-  # Directory (relative to root of your repo) that contains the deploy-ready 
-  publish = "_site"
-
-  # Default build command.
-  command = "npm run build"
