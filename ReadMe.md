@@ -21,4 +21,8 @@ Personal bio and some links to other places I exist on the interwebs
 * is dirty indicator
 * preview
 * loading styles
+* add terminal
+* customize command pallette
+* customize right click
+* disable keyboard on mobile
 

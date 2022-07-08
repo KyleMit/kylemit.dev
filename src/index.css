@@ -6,7 +6,7 @@ html, body {
 body {
     height: 100vh;
 }
-#container {
+main {
     height: calc(100vh - 74px);
 }
 header {
@@ -15,6 +15,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#container {
+    display: none;
+}
+#preview-pane {
+    display: none;
+}
+.editor #container {
+    display: block;
+}
+.preview #preview-pane {
+    display: block;
 }
 footer {
     height: 24px;
@@ -31,14 +43,22 @@ footer a {
     color: white;
     text-decoration: none;
 }
-.toggle {
+.toggles {
     position: absolute;
     right: 16px;
 }
-#theme {
+.toggles input {
     width: 0;
     height: 0;
     visibility: hidden;
+}
+.toggles label {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+}
+.toggles label:hover {
+    background: #84848433;
 }
 .icon-link {
     display: flex;

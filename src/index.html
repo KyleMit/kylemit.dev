@@ -7,15 +7,18 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 140 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
     <title>Hello World</title>
 </head>
-<body>
+<body class="editor">
     <header class="monaco-editor">
         <span>kylemit.dev</span>
-        <div class="toggle">
-            <label for="theme" class='codicon codicon-color-mode'></label>
+        <div class="toggles">
             <input type="checkbox" id="theme" name="theme" checked />
+            <label for="theme" class='codicon codicon-color-mode'></label>
+            <input type="checkbox" id="preview" name="preview" />
+            <label for="preview" class='codicon codicon-open-preview'></label>
         </div>
     </header>
-    <div id="container"></div>
+    <main id="container"></main>
+    <main id="preview-pane"></main>
     <footer>
         <a href="https://github.com/KyleMit/kylemit.dev" class="icon-link">
             <div class='codicon codicon-github'></div>
