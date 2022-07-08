@@ -11,12 +11,17 @@ Personal bio and some links to other places I exist on the interwebs
 
 ## Todo
 
-* Favicon
+
 * Top bar
 * Light / Dark theme
-* Fix cross-origin
-* Don't need to build every language
-
+* Don't build every language
+* Bundle single JS file
+* Bottom status bar
+  * copyright year
+* Fix viewport scroll bug
+* sidebar w/ projects
+  * github
+  * linkedin
 
 
 
