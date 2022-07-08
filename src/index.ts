@@ -24,10 +24,13 @@ const editor = monaco.editor.create(document.getElementById('container')!, {
 // toggle theme
 const themeCheck = document.getElementById("theme") as HTMLInputElement
 themeCheck.addEventListener('change', (e) => {
-  monaco.editor.setTheme(themeCheck.checked ? 'vs-dark' : 'vs-light');
+  const className = themeCheck.checked ? 'vs-dark' : 'vs-light'
+  document.body.classList.remove('vs-dark', 'vs-light')
+  document.body.classList.add(className)
+  monaco.editor.setTheme(className);
 })
 
-const previewPane = document.getElementById("preview-pane") as HTMLInputElement
+const previewContents = document.getElementById("preview-contents") as HTMLInputElement
 const previewCheck = document.getElementById("preview") as HTMLInputElement
 previewCheck.addEventListener('change', (e) => {
   document.body.classList.remove("preview", "editor")
@@ -36,7 +39,7 @@ previewCheck.addEventListener('change', (e) => {
 
   const md = editor.getValue()
   const html = converter.makeHtml(md)
-  previewPane.innerHTML = html
+  previewContents.innerHTML = html
 })
 
 editor?.getModel()?.onDidChangeContent((event) => {
