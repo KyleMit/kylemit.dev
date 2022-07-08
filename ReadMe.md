@@ -14,6 +14,10 @@ Personal bio and some links to other places I exist on the interwebs
 * Favicon
 * Top bar
 * Light / Dark theme
+* Fix cross-origin
+* Don't need to build every language
+
+
 
 
 
