@@ -9,6 +9,8 @@ html, body {
 }
 body {
     height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 header {
     height: 50px;
@@ -17,9 +19,9 @@ header {
     justify-content: center;
     align-items: center;
 }
-main {
+/* main {
     height: calc(100vh - 74px);
-}
+} */
 main > * {
     height: 100%;
 }

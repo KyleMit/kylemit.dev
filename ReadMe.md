@@ -25,4 +25,8 @@ Personal bio and some links to other places I exist on the interwebs
 * slide preview transition
 * add themeing for preview
 * save user preferences (local storage)
+* spend time on content
+* add profile picture
+* inline render picture in MD?
+* cool stats in bottom bar
 
