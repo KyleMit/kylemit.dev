@@ -12,7 +12,8 @@ const isMobile = 'ontouchstart' in document.documentElement;
 const editor = monaco.editor.create(document.getElementById('container')!, {
   value: content,
   language: 'markdown',
-  wordWrap: 'on',
+  wordWrap: 'bounded',
+  wordWrapColumn: 80,
   fontSize: 18,
   minimap: {
 		enabled: false
@@ -21,6 +22,7 @@ const editor = monaco.editor.create(document.getElementById('container')!, {
   readOnly: isMobile,
   domReadOnly: isMobile,
   automaticLayout: true,
+
 });
 
 // toggle theme

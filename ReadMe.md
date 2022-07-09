@@ -22,7 +22,6 @@ Personal bio and some links to other places I exist on the interwebs
 * add terminal
 * customize command pallette
 * customize right click
-* disable keyboard on mobile
 * slide preview transition
 * add themeing for preview
 * save user preferences (local storage)

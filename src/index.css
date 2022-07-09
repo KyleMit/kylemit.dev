@@ -36,18 +36,11 @@ footer {
 }
 
 /* main */
-#container {
-    display: none;
-}
-#preview-pane {
-    display: none;
-}
-.editor #container {
-    display: block;
-}
-.preview #preview-pane {
-    display: block;
-}
+#container { display: none; }
+#preview-pane { display: none; }
+.editor #container { display: block; }
+.preview #preview-pane { display: block; }
+
 #preview-pane {
     padding: 16px;
     font-size: 18px;
