@@ -18,8 +18,6 @@ Personal bio and some links to other places I exist on the interwebs
 * sidebar w/ projects
   * github
   * linkedin
-* is dirty indicator
-* preview
 * loading styles
 * add terminal
 * customize command pallette
@@ -27,4 +25,5 @@ Personal bio and some links to other places I exist on the interwebs
 * disable keyboard on mobile
 * slide preview transition
 * add themeing for preview
+* save user preferences (local storage)
 

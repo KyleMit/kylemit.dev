@@ -1,12 +1,13 @@
 import * as monaco from 'monaco-editor';
 import showdown from "showdown";
-import "./index.css"
+
 import about from "./index.md?raw"
 import aboutSm from "./index-sm.md?raw"
 
 const converter = new showdown.Converter();
 const content = window.innerWidth > 700 ? about : aboutSm;
 
+const isMobile = 'ontouchstart' in document.documentElement;
 
 const editor = monaco.editor.create(document.getElementById('container')!, {
   value: content,
@@ -17,8 +18,9 @@ const editor = monaco.editor.create(document.getElementById('container')!, {
 		enabled: false
   },
   theme: "vs-dark",
-  readOnly: 'ontouchstart' in document.documentElement,
-  automaticLayout: true
+  readOnly: isMobile,
+  domReadOnly: isMobile,
+  automaticLayout: true,
 });
 
 // toggle theme
