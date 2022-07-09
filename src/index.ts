@@ -1,8 +1,8 @@
 import * as monaco from 'monaco-editor';
 import showdown from "showdown";
 
-import about from "./index.md?raw"
-import aboutSm from "./index-sm.md?raw"
+import about from "./about.md?raw"
+import aboutSm from "./about-sm.md?raw"
 
 const converter = new showdown.Converter();
 const content = window.innerWidth > 700 ? about : aboutSm;
