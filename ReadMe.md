@@ -23,7 +23,6 @@ Personal bio and some links to other places I exist on the interwebs
 * customize command pallette
 * customize right click
 * slide preview transition
-* add themeing for preview
 * save user preferences (local storage)
 * spend time on content
 * inline render picture in MD?
