@@ -15,6 +15,7 @@ const editor = monaco.editor.create(document.getElementById('container')!, {
   wordWrap: 'bounded',
   wordWrapColumn: 80,
   fontSize: 18,
+  fontFamily: "Fira Code",
   minimap: {
 		enabled: false
   },
