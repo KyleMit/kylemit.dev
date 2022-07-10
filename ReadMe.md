@@ -12,7 +12,7 @@ Personal bio and some links to other places I exist on the interwebs
 
 ## Todo
 
-
+* SSG content
 * Don't build every language
 * Bundle single JS file
 * sidebar w/ projects
@@ -28,5 +28,6 @@ Personal bio and some links to other places I exist on the interwebs
 * spend time on content
 * inline render picture in MD?
 * cool stats in bottom bar
+* convert markdown links to footnotes
 
 
