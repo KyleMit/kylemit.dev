@@ -66,9 +66,13 @@
             </span>
             <div class="toggles">
                 <input type="checkbox" id="theme" name="theme" checked />
-                <label for="theme" class='codicon codicon-color-mode'></label>
+                <label for="theme">
+                    {% include "icons/color-mode.svg" %}
+                </label>
                 <input type="checkbox" id="preview" name="preview" />
-                <label for="preview" class='codicon codicon-open-preview'></label>
+                <label for="preview" >
+                    {% include "icons/open-preview.svg" %}
+                </label>
             </div>
         </header>
         <main>
@@ -82,7 +86,7 @@
         </main>
         <footer>
             <a href="https://github.com/KyleMit/kylemit.dev" class="icon-link">
-                <div class='codicon codicon-github'></div>
+                {% include "icons/source-control.svg" %}
                 <span>main</span>
             </a>
             <span>&copy 2022</span>
