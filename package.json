@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Personal bio and some links to other places I exist on the interwebs",
   "scripts": {
+    "build": "npx cross-env ELEVENTY_ENV=prod npx eleventy",
+    "serve": "npx cross-env ELEVENTY_ENV=dev  npx eleventy --serve",
+    "clean": "npx rimraf _site"
   },
   "dependencies": {
-
-  },
-  "devDependencies": {
-
+    "@11ty/eleventy": "^1.0.1",
+    "clean-css": "^5.3.0",
+    "terser": "^5.14.1"
   },
   "repository": {
     "type": "git",

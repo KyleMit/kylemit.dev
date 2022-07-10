@@ -1,3 +1,9 @@
+---
+layout: default.njk
+---
+
+
+```md
 # Hello Hello 👋
 
 ## About Me (Kyle)
@@ -15,4 +21,4 @@ I've been writing software for the last decade or so at StackOverflow, DealerPol
 * [Blog](http://www.codingeverything.com/)
 * [jsFiddle](https://jsfiddle.net/user/KyleMit/fiddles/)
 * [CodePen](https://codepen.io/KyleMit/pens/popular)
-
+```
