@@ -123,3 +123,8 @@ body a:hover {
     gap: 6px;
     line-height: 0.9;
 }
+
+/* syntax highlighting */
+.title {
+    color: teal
+}
