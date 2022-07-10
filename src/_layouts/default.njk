@@ -53,11 +53,10 @@
 
 </head>
 <body class="no-js" >
+    <input type="checkbox" id="theme" name="theme" checked class="hidden-toggle"/>
+    <input type="checkbox" id="preview" name="preview" class="hidden-toggle" />
 
-
-
-    <div class="content">
-
+    <div id="content">
 
         <header class="monaco-editor">
             <span>
@@ -65,22 +64,22 @@
                 <span class="dirty-indicator">•</span>
             </span>
             <div class="toggles">
-                <input type="checkbox" id="theme" name="theme" checked />
+
                 <label for="theme">
                     {% include "icons/color-mode.svg" %}
                 </label>
-                <input type="checkbox" id="preview" name="preview" />
+
                 <label for="preview" >
                     {% include "icons/open-preview.svg" %}
                 </label>
             </div>
         </header>
         <main>
-            <div id="container">
+            <div id="editor">
                 {# All Content Injected Here #}
                 {{content | safe}}
             </div>
-            <div id="preview-pane">
+            <div id="preview">
                 <div id="preview-contents"></div>
             </div>
         </main>

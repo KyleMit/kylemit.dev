@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/KyleMit/kylemit.dev/issues"
   },
-  "homepage": "https://github.com/KyleMit/kylemit.dev#readme"
+  "homepage": "https://github.com/KyleMit/kylemit.dev#readme",
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0"
+  }
 }

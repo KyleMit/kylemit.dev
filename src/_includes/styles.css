@@ -1,15 +1,17 @@
 /* layout */
+:root {
+    --vscode-editor-background: #1e1e1e;
+    --vscode-editor-foreground: #d4d4d4;
+}
 html, html * {
     box-sizing: border-box;
+    font-family: "Fira Code", Consolas, 'Courier New', Courier, monospace;
 }
 html, body {
     padding: 0;
     margin: 0;
 }
-body, main {
-    overflow: hidden;
-}
-body {
+#content {
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -20,6 +22,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+main {
+    padding: 16px;
 }
 /* main {
     height: calc(100vh - 74px);
@@ -57,9 +62,16 @@ footer {
 }
 
 /* theme */
-.vs-dark {
-  color: rgb(212, 212, 212);
-  background-color: #1e1e1e;
+#content {
+    background: white;
+    color: black;
+}
+#theme:checked ~ #content {
+    background: var(--vscode-editor-background);
+    color: var(--vscode-editor-foreground);
+}
+pre > code {
+    white-space: pre-wrap;
 }
 
 /* elements */
@@ -77,10 +89,11 @@ body a:hover {
     position: absolute;
     right: 16px;
 }
-.toggles input {
+.hidden-toggle {
     width: 0;
     height: 0;
     visibility: hidden;
+    position: absolute;
 }
 .toggles label {
     cursor: pointer;
