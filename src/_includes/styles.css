@@ -1,6 +1,6 @@
 /* layout */
 :root {
-    --vscode-editor-background: #1e1e1e;
+    --vscode-editor-background: #1d2225;
     --vscode-editor-foreground: #d4d4d4;
 }
 html, html * {
@@ -61,15 +61,7 @@ footer {
     margin: 0 auto;
 }
 
-/* theme */
-#content {
-    background: white;
-    color: black;
-}
-#theme:checked ~ #content {
-    background: var(--vscode-editor-background);
-    color: var(--vscode-editor-foreground);
-}
+
 pre > code {
     white-space: pre-wrap;
 }
@@ -124,7 +116,27 @@ body a:hover {
     line-height: 0.9;
 }
 
-/* syntax highlighting */
-.title {
-    color: teal
+/* theme */
+#content {
+    background: white;
+    color: black;
 }
+#theme:checked ~ #content {
+    background: var(--vscode-editor-background);
+    color: var(--vscode-editor-foreground);
+}
+/* syntax highlighting */
+.language-md .important    { font-weight: bold; }
+
+/* light */
+.language-md .title        { color: hsl(114deg 31% 68%); }
+.language-md .punctuation  { color: hsl(180deg 36% 54%); }
+.language-md .url          { color: hsl(180deg 36% 54%); }
+.language-md .url .content { color: hsl(359deg 83% 71%); }
+.language-md .url .url     { color: hsl(215deg 36% 61%); }
+/* dark */
+#theme:checked ~ #content .language-md .title        { color: hsl(114deg 31% 68%); }
+#theme:checked ~ #content .language-md .punctuation  { color: hsl(180deg 36% 54%); }
+#theme:checked ~ #content .language-md .url          { color: hsl(180deg 36% 54%); }
+#theme:checked ~ #content .language-md .url .content { color: hsl(359deg 83% 71%); }
+#theme:checked ~ #content .language-md .url .url     { color: hsl(215deg 36% 61%); }
