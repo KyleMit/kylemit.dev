@@ -1,61 +1,19 @@
-const { minify } = require("terser")
-const CleanCSS = require("clean-css");
-const Prism = require('prismjs');
-const markdownIt = require("markdown-it");
-const loadLanguages = require('prismjs/components/');
-loadLanguages(['md']);
-
+const { compilePlainText, convertMarkdownToHtml, minifyCss, minifyJs, syntaxHighlightMarkdown} = require("./utils/index")
 module.exports = function(eleventyConfig) {
 
     // add assets
     eleventyConfig.addPassthroughCopy("src/assets");
 
-    const md = markdownIt({
-      html: true,
-      breaks: true,
-      linkify: true
-    })
-    eleventyConfig.setLibrary("md", md);
+    eleventyConfig.addFilter("md", convertMarkdownToHtml);
 
-    eleventyConfig.addFilter("md", function(code) {
-      return md.render(code);
-    });
-
-    eleventyConfig.addFilter("highlightMd", function(code) {
-      // return original text if run in dev
-      const html = Prism.highlight(code, Prism.languages.md, 'md');
-      return `<pre class="language-md"><code>${html}</code></pre>`;
-    });
+    eleventyConfig.addFilter("highlightMd", syntaxHighlightMarkdown);
 
     // override md engine to return plain content
-    eleventyConfig.addExtension("md", {
-      compile: function (inputContent, _inputPath) {
-        return (_data) => inputContent;
-      }
-    });
+    eleventyConfig.addExtension("md", { compile: compilePlainText });
 
-    eleventyConfig.addFilter("cssmin", function(code) {
-        // return original text if run in dev
-        if (process.env.ELEVENTY_ENV.toLowerCase() == "dev") return code
-        return new CleanCSS({}).minify(code).styles;
-    });
+    eleventyConfig.addFilter("cssmin", minifyCss);
 
-    eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
-        // return original text if run in dev
-        if (process.env.ELEVENTY_ENV.toLowerCase() == "dev") {
-            callback(null, code)
-        }
-
-        try {
-          const minified = await minify(code)
-          callback(null, minified.code)
-        } catch (err) {
-          console.error("Terser error: ", err)
-          // Fail gracefully.
-          callback(null, code)
-        }
-      }
-    )
+    eleventyConfig.addNunjucksAsyncFilter("jsmin", minifyJs)
 
 
     return {
