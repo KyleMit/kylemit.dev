@@ -64,7 +64,7 @@ footer {
 }
 
 
-pre {
+pre, code {
     white-space: pre-wrap;
 }
 
