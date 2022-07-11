@@ -17,3 +17,4 @@ Personal bio and some links to other places I exist on the interwebs
   * Read as fenced code block
     * syntax highlighting
     * highlighted -> text content -> markdown render
+* render .md file as plaintext (html)

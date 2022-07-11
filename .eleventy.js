@@ -1,10 +1,9 @@
 const { minify } = require("terser")
 const CleanCSS = require("clean-css");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const hljs = require('highlight.js');
 const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPlugin(syntaxHighlight);
 
     // add assets
     eleventyConfig.addPassthroughCopy("src/assets");
@@ -23,9 +22,16 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("highlight", function(code) {
       // return original text if run in dev
-      return `<pre>${code}</pre>`;
+      const html = hljs.highlight(code, {language: 'md'}).value
+      return `<pre>${html}</pre>`;
     });
 
+    // override md engine to return plain content
+    eleventyConfig.addExtension("md", {
+      compile: function (inputContent, _inputPath) {
+        return (_data) => inputContent;
+      }
+    });
 
     eleventyConfig.addFilter("cssmin", function(code) {
         // return original text if run in dev
