@@ -67,6 +67,9 @@ footer {
 pre, code {
     white-space: pre-wrap;
 }
+.url .url {
+    word-break: break-all;
+}
 
 /* elements */
 body a {
@@ -124,27 +127,34 @@ body a:hover {
     height: 13px;
 }
 
-/* theme */
+/* theme (default dark) */
 #content {
-    background: white;
-    color: black;
-}
-#theme:checked ~ #content {
     background: var(--vscode-editor-background);
     color: var(--vscode-editor-foreground);
+}
+#theme:checked ~ #content {
+    background: #fcfcfc;
+    color: #161819;
 }
 /* syntax highlighting */
 .language-md .important    { font-weight: bold; }
 
-/* light */
-.language-md .title        {color: hsl(114deg 31% 49%);}
-.language-md .punctuation  {color: hsl(180deg 52% 43%);}
-.language-md .url          {color: hsl(180deg 36% 34%);}
-.language-md .url .content {color: hsl(359deg 83% 53%);}
-.language-md .url .url     {color: hsl(215deg 36% 45%);}
 /* dark */
-#theme:checked ~ #content .language-md .title        { color: hsl(114deg 31% 68%); }
-#theme:checked ~ #content .language-md .punctuation  { color: hsl(180deg 36% 54%); }
-#theme:checked ~ #content .language-md .url          { color: hsl(180deg 36% 54%); }
-#theme:checked ~ #content .language-md .url .content { color: hsl(359deg 83% 71%); }
-#theme:checked ~ #content .language-md .url .url     { color: hsl(215deg 36% 61%); }
+.language-md .title        { color: hsl(114deg 31% 68%); }
+.language-md .punctuation  { color: hsl(180deg 36% 54%); }
+.language-md .url          { color: hsl(180deg 36% 54%); }
+.language-md .url .content { color: hsl(359deg 83% 71%); }
+.language-md .url .url     { color: hsl(215deg 36% 61%); }
+/* light */
+#theme:checked ~ #content .language-md .title        {color: hsl(114deg 31% 49%);}
+#theme:checked ~ #content .language-md .punctuation  {color: hsl(180deg 52% 43%);}
+#theme:checked ~ #content .language-md .url          {color: hsl(180deg 36% 34%);}
+#theme:checked ~ #content .language-md .url .content {color: hsl(359deg 83% 53%);}
+#theme:checked ~ #content .language-md .url .url     {color: hsl(215deg 36% 45%);}
+
+h1,h2,h3 { color: hsl(114deg 31% 68%); }
+#theme:checked ~ #content h1,
+#theme:checked ~ #content h2,
+#theme:checked ~ #content h3 {
+    color: hsl(114deg 31% 49%);
+}

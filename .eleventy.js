@@ -18,7 +18,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary("md", md);
 
     eleventyConfig.addFilter("md", function(code) {
-      // return original text if run in dev
       return md.render(code);
     });
 

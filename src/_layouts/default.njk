@@ -53,7 +53,7 @@
 
 </head>
 <body class="no-js" >
-    <input type="checkbox" id="theme" name="theme" checked class="hidden-toggle"/>
+    <input type="checkbox" id="theme" name="theme" class="hidden-toggle"/>
     <input type="checkbox" id="preview" name="preview" class="hidden-toggle" />
 
     <div id="content">
@@ -75,10 +75,10 @@
         </header>
         <main>
             <div id="editor">
-                {{content | highlight | safe}}
+                {{ content | highlight | safe }}
             </div>
             <div id="preview">
-                {{content | md | safe }}
+                {{ content | md | safe }}
             </div>
         </main>
         <footer>

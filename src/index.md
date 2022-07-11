@@ -1,8 +1,6 @@
 ---
 layout: default.njk
 ---
-
-
 # Hello Hello 👋
 
 ## About Me (Kyle)
