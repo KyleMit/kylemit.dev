@@ -82,6 +82,8 @@ body a:hover {
 .toggles {
     position: absolute;
     right: 16px;
+    display: flex;
+    gap: 8px;
 }
 .hidden-toggle {
     width: 0;
@@ -91,13 +93,14 @@ body a:hover {
 }
 .toggles label {
     cursor: pointer;
-    padding: 4px;
+    padding: 8px 8px 4px 8px;
     border-radius: 4px;
 }
 .toggles label:hover {
-    background: rgb(132 132 132 / 20%);
+    background: rgb(132 132 132 / 20%) !important;
 }
-.toggles :checked + label:hover {
+#theme:checked ~ #content label[for="theme"],
+#preview:checked ~ #content label[for="preview"] {
     background: rgb(132 132 132 / 34%);
 }
 
