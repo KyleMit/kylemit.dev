@@ -75,7 +75,7 @@
         </header>
         <main>
             <div id="editor-pane">
-                {{ content | highlight | safe }}
+                {{ content | highlightMd | safe }}
             </div>
             <div id="preview-pane">
                 {{ content | md | safe }}

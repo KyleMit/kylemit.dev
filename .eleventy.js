@@ -21,7 +21,7 @@ module.exports = function(eleventyConfig) {
       return md.render(code);
     });
 
-    eleventyConfig.addFilter("highlight", function(code) {
+    eleventyConfig.addFilter("highlightMd", function(code) {
       // return original text if run in dev
       const html = Prism.highlight(code, Prism.languages.md, 'md');
       return `<pre class="language-md"><code>${html}</code></pre>`;
