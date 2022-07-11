@@ -75,10 +75,10 @@
         </header>
         <main>
             <div id="editor">
-                {{content | safe}}
+                {{content | highlight | safe}}
             </div>
             <div id="preview">
-                {{content }}
+                {{content | md | safe }}
             </div>
         </main>
         <footer>
