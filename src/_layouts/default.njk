@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% set page_title %}Hello World{% endset %}
+    {% set base_url = "https://kylemit.dev/" %}
+    {% set summary = "Personal bio and some links to other places I exist on the interwebs" %}
+
+    {# Favicons #}
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 140 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+
+    {# Theme color for browser chrome (chrome android) #}
+    <meta name="theme-color" content="#0e710e">
+
+    {# standard meta tags #}
+    <title>{{page_title}}</title>
+    <meta name="title" content="{{page_title}}">
+    <meta name="description" content="{{summary}}">
+    <link rel="canonical" href="{{base_url}}{{page.url}}">
+
+    {# Open Graph / Facebook #}
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{base_url}}{{page.url}}">
+    <meta property="og:title" content="{{page_title}}">
+    <meta property="og:description" content="{{summary}}">
+    <meta property="og:image" content="/assets/thumbnail.png">
+
+    {# Twitter #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{page_title}}">
+    <meta name="twitter:description" content="{{summary}}">
+    <meta name="twitter:image" content="/assets/thumbnail.png">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+
+    <!-- capture the CSS content as a Nunjucks variable -->
+    {% set css %}{% include "styles.css" %}{% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+        {{ css | cssmin | safe }}
+    </style>
+
+    <!-- capture the JS content as a Nunjucks variable -->
+    {% set js %}{% include "init.js" %}{% endset %}
+    <!-- feed it through our jsmin filter to minify -->
+    <script>{{ js | jsmin | safe }}</script>
+
+</head>
+<body class="no-js" >
+    <input type="checkbox" id="theme" name="theme" checked class="hidden-toggle"/>
+    <input type="checkbox" id="preview" name="preview" class="hidden-toggle" />
+
+    <div id="content">
+
+        <header class="monaco-editor">
+            <span>
+                kylemit.dev
+                <span class="dirty-indicator">•</span>
+            </span>
+            <div class="toggles">
+                <label for="theme">
+                    {% include "icons/color-mode.svg" %}
+                </label>
+
+                <label for="preview" >
+                    {% include "icons/open-preview.svg" %}
+                </label>
+            </div>
+        </header>
+        <main>
+            <div id="editor">
+                {{content | highlight | safe}}
+            </div>
+            <div id="preview">
+                {{content | md | safe }}
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/KyleMit/kylemit.dev" class="icon-link">
+                {% include "icons/source-control.svg" %}
+                <span>main</span>
+            </a>
+            <span>&copy 2022</span>
+        </footer>
+
+
+    </div>
+
+
+    <!-- capture the JS content as a Nunjucks variable -->
+    {% set js %}{% include "site.js" %}{% endset %}
+    <!-- feed it through our jsmin filter to minify -->
+    <script>
+        {{ js | jsmin | safe }}
+    </script>
+</body>
+</html>
