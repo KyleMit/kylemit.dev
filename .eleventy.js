@@ -1,7 +1,9 @@
 const { minify } = require("terser")
 const CleanCSS = require("clean-css");
-const hljs = require('highlight.js');
+const Prism = require('prismjs');
 const markdownIt = require("markdown-it");
+const loadLanguages = require('prismjs/components/');
+loadLanguages(['md']);
 
 module.exports = function(eleventyConfig) {
 
@@ -22,8 +24,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("highlight", function(code) {
       // return original text if run in dev
-      const html = hljs.highlight(code, {language: 'md'}).value
-      return `<pre>${html}</pre>`;
+      const html = Prism.highlight(code, Prism.languages.md, 'md');
+      return `<pre class="language-md"><code>${html}</code></pre>`;
     });
 
     // override md engine to return plain content
