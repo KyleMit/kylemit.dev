@@ -34,8 +34,10 @@ main > * {
 }
 footer {
     height: 24px;
-    background-color: #007acc;
+    font-size: 13px;
+    font-family: helvetica, sans-serif;
     color:white;
+    background-color: #007acc;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -45,10 +47,10 @@ footer {
 }
 
 /* main */
-#container { display: none; }
-#preview-pane { display: none; }
-.editor #container { display: block; }
-.preview #preview-pane { display: block; }
+#editor { display: block; }
+#preview { display: none; }
+#preview:checked ~ #content #editor { display: none; }
+#preview:checked ~ #content #preview { display: block; }
 
 #preview-pane {
     padding: 16px;
@@ -112,8 +114,11 @@ body a:hover {
 .icon-link {
     display: flex;
     align-self: center;
-    gap: 6px;
-    line-height: 0.9;
+    gap: 0px;
+    line-height: 1;
+}
+.icon-link svg {
+    height: 13px;
 }
 
 /* theme */
@@ -129,11 +134,11 @@ body a:hover {
 .language-md .important    { font-weight: bold; }
 
 /* light */
-.language-md .title        { color: hsl(114deg 31% 68%); }
-.language-md .punctuation  { color: hsl(180deg 36% 54%); }
-.language-md .url          { color: hsl(180deg 36% 54%); }
-.language-md .url .content { color: hsl(359deg 83% 71%); }
-.language-md .url .url     { color: hsl(215deg 36% 61%); }
+.language-md .title        {color: hsl(114deg 31% 49%);}
+.language-md .punctuation  {color: hsl(180deg 52% 43%);}
+.language-md .url          {color: hsl(180deg 36% 34%);}
+.language-md .url .content {color: hsl(359deg 83% 53%);}
+.language-md .url .url     {color: hsl(215deg 36% 45%);}
 /* dark */
 #theme:checked ~ #content .language-md .title        { color: hsl(114deg 31% 68%); }
 #theme:checked ~ #content .language-md .punctuation  { color: hsl(180deg 36% 54%); }
