@@ -202,3 +202,10 @@ pre, pre * {
 .line-code {
     line-height: 1.4;
 }
+
+/* editable */
+.line-code:focus {
+    outline: none;
+    background: #8080804f;
+}
+#theme:checked ~ #content { background: #b0b0b026; }

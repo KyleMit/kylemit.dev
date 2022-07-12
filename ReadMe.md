@@ -8,11 +8,15 @@ Personal bio and some links to other places I exist on the interwebs
 * transition preview toggle
 * add label tooltips to toggles
 * fix position for header and footer
-* add line numbers to syntax highlighting
-* add line highlight?
-  * process markdown and break up into divs?
 * perfect lighthouse score
 * ensure background color applied on mobile device
 * color scroll bar
 * on mobile, covert to footnote links
+* make editable on desktop
+  * live preview
+  * dirty indicator
+* add command pallette
+  * contact me
+* add terminal
+  * list repos
 

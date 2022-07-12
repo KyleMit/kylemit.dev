@@ -1,5 +1,9 @@
 const isMobile = 'ontouchstart' in document.documentElement;
 
+// make editable on desktop
+if (!isMobile) {
+    // document.querySelectorAll(".line-code").forEach(el => el.contentEditable = true)
+}
 
 // toggle theme
 // const themeCheck = document.getElementById("theme") as HTMLInputElement
