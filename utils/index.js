@@ -17,7 +17,10 @@ function convertMarkdownToHtml(code) {
 
 function syntaxHighlightMarkdown(code) {
     const html = Prism.highlight(code, Prism.languages.md, 'md');
-    return `<pre class="language-md"><code>${html}</code></pre>`;
+    const lined =   html.split('\n')
+        .map((line, num) => `<div class="line-num">${(num + 1)}</div><div class="line-code">${line}</div>`)
+        .join('\n');
+    return `<pre class="language-md"><code>${lined}</code></pre>`;
 }
 
 function compilePlainText(inputContent, _inputPath) {

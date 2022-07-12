@@ -55,9 +55,12 @@ footer {
     padding: 16px;
     font-size: 18px;
     line-height: 1.4;
-    overflow-y: auto;
     max-width: 50rem;
     margin: 0 auto;
+}
+
+#editor-pane {
+    max-width: 65rem;
 }
 
 
@@ -182,4 +185,20 @@ pre, pre * {
     font-family: 'Courier New';
     src: local(Courier New);
     size-adjust: 106%
+}
+
+/* line nums */
+.language-md > code {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+}
+
+.line-num {
+    text-align: right;
+    user-select: none;
+    color: grey;
+}
+.line-code {
+    line-height: 1.4;
 }
