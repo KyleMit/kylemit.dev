@@ -161,6 +161,20 @@ h1,h2,h3 { color: hsl(114deg 31% 68%); }
     color: hsl(114deg 31% 49%);
 }
 
+/* transitions */
+@media (prefers-reduced-motion: no-preference) {
+    #content,
+    #content main,
+    .language-md .title,
+    .language-md .punctuation,
+    .language-md .url,
+    .language-md .url .content,
+    .language-md .url .url,
+    h1,h2,h3 {
+        transition: color .3s ease, background .3s ease;
+    }
+}
+
 /* font */
 pre, pre * {
     font-family: "Fira Code", Consolas, 'Courier New', Courier, monospace;
@@ -208,4 +222,4 @@ pre, pre * {
     outline: none;
     background: #8080804f;
 }
-#theme:checked ~ #content { background: #b0b0b026; }
+#theme:checked ~ #content .line-code:focus { background: #b0b0b026; }
