@@ -61,18 +61,21 @@
                     kylemit.dev
                     <span class="dirty-indicator">•</span>
                 </span>
-                <div class="toggles">
+                <div class="toggles p-right">
                     <label for="theme">
+                        Toggle theme
                         {% include "icons/color-mode.svg" %}
-                    </label>
-
-                    <label for="preview" >
-                        {% include "icons/open-preview.svg" %}
                     </label>
                 </div>
             </div>
             <div class="editor-bar">
                 <div class="editor-tab">{{title}}</div>
+                <div class="toggles">
+                    <label for="preview" >
+                        (preview)
+                        {% include "icons/open-preview.svg" %}
+                    </label>
+                </div>
             </div>
         </header>
         <main>

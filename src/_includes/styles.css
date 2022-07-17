@@ -19,12 +19,12 @@ body, #content {
     grid-template-rows: auto 1fr auto;
 }
 header {
-    height: 60px;
+    height: 66px;
 }
 main {
     padding: 16px;
     overflow-y: auto;
-    height: calc(100vh - 84px);
+    height: calc(100vh - 90px);
 }
 main > * {
     height: 100%;
@@ -85,7 +85,7 @@ h1 {
 
 /* header */
 header > .title-bar {
-    height: 30px;
+    height: 36px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -95,7 +95,7 @@ header > .editor-bar {
     height: 30px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 .editor-tab {
@@ -107,7 +107,7 @@ header > .editor-bar {
 }
 
 /* toggles */
-.toggles {
+.p-right {
     position: absolute;
     right: 16px;
     display: flex;
@@ -121,8 +121,12 @@ header > .editor-bar {
 }
 .toggles label {
     cursor: pointer;
-    padding: 8px 8px 4px 8px;
+    padding: 2px 4px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .9em;
 }
 .toggles label:hover {
     background: rgb(132 132 132 / 20%) !important;
@@ -130,6 +134,16 @@ header > .editor-bar {
 #theme:checked ~ #content label[for="theme"],
 #preview:checked ~ #content label[for="preview"] {
     background: rgb(132 132 132 / 34%);
+}
+.toggles [for="theme"] {
+    margin-top: 1px;
+}
+.toggles [for="preview"] {
+    padding-top: 1px;
+    margin-left: 4px;
+}
+.toggles [for="preview"] svg {
+    margin-top: 3px;
 }
 
 
