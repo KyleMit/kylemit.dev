@@ -40,7 +40,7 @@ footer {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding: 0 16px;
+    padding: 0 8px;
 }
 
 /* main */
@@ -52,8 +52,6 @@ footer {
 #preview-pane {
     font-size: 18px;
     line-height: 1.4;
-    max-width: 50rem;
-    margin: 0 auto;
 }
 
 #editor-pane {
@@ -127,16 +125,17 @@ header > .editor-bar {
     align-items: center;
     gap: 8px;
     font-size: .9em;
+    user-select: none;
 }
 .toggles label:hover {
     background: rgb(132 132 132 / 20%) !important;
 }
-#theme:checked ~ #content label[for="theme"],
-#preview:checked ~ #content label[for="preview"] {
-    background: rgb(132 132 132 / 34%);
+#theme:checked ~ #content .toggles label {
+    background: rgb(132 132 132 / 20%);
 }
 .toggles [for="theme"] {
     margin-top: 1px;
+    padding: 5px 9px;
 }
 .toggles [for="preview"] {
     padding-top: 1px;
