@@ -42,9 +42,7 @@
     <!-- capture the CSS content as a Nunjucks variable -->
     {% set css %}{% include "styles.css" %}{% endset %}
     <!-- feed it through our cssmin filter to minify -->
-    <style>
-        {{ css | cssmin | safe }}
-    </style>
+    <style>{{ css | cssmin | safe }} </style>
 
     <!-- capture the JS content as a Nunjucks variable -->
     {% set js %}{% include "init.js" %}{% endset %}
@@ -52,7 +50,7 @@
     <script>{{ js | jsmin | safe }}</script>
 
 </head>
-<body class="no-js" >
+<body>
     <input type="checkbox" id="theme" name="theme" class="hidden-toggle"/>
     <input type="checkbox" id="preview" name="preview" class="hidden-toggle" />
 
@@ -96,8 +94,6 @@
     <!-- capture the JS content as a Nunjucks variable -->
     {% set js %}{% include "site.js" %}{% endset %}
     <!-- feed it through our jsmin filter to minify -->
-    <script>
-        {{ js | jsmin | safe }}
-    </script>
+    <script>{{ js | jsmin | safe }}</script>
 </body>
 </html>

@@ -9,9 +9,9 @@ Personal bio and some links to other places I exist on the interwebs
 * add label tooltips to toggles
 * fix position for header and footer
 * perfect lighthouse score
-* ensure background color applied on mobile device
-* color scroll bar
+
 * on mobile, covert to footnote links
+
 * make editable on desktop
   * live preview
   * dirty indicator
