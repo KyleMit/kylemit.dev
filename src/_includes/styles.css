@@ -41,6 +41,10 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 0 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* main */
@@ -308,7 +312,9 @@ main::-webkit-scrollbar-track {
 main::-webkit-scrollbar-thumb {
     background-color: #a9a9a929;
 }
-
+#theme:checked ~ #content main::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9c2;
+}
 
 /* responsive */
 .d-md {
