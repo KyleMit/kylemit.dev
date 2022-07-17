@@ -1,4 +1,4 @@
-const { compilePlainText, convertMarkdownToHtml, minifyCss, minifyJs, syntaxHighlightMarkdown} = require("./utils/index")
+const { compilePlainText, convertMarkdownToHtml, minifyCss, minifyJs, formatMarkdown} = require("./utils/index")
 module.exports = function(eleventyConfig) {
 
     // add assets
@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("md", convertMarkdownToHtml);
 
-    eleventyConfig.addFilter("highlightMd", syntaxHighlightMarkdown);
+    eleventyConfig.addFilter("formatMd", formatMarkdown);
 
     // override md engine to return plain content
     eleventyConfig.addExtension("md", { compile: compilePlainText });

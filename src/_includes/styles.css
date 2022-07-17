@@ -247,3 +247,17 @@ main::-webkit-scrollbar-track {
 main::-webkit-scrollbar-thumb {
     background-color: #a9a9a929;
 }
+
+
+/* responsive */
+.d-md {
+    display: none;
+}
+@media screen and (min-width: 600px) {
+    .d-md {
+        display: inline;
+    }
+    .d-sm {
+        display: none;
+    }
+  }
