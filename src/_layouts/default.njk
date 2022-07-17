@@ -44,7 +44,7 @@
     <style>{{ css | cssmin | safe }} </style>
 
     <!-- capture the JS content as a Nunjucks variable -->
-    {% set js %}{% include "init.js" %}{% endset %}
+    {% set js %}{% include "init-head.js" %}{% endset %}
     <!-- feed it through our jsmin filter to minify -->
     <script>{{ js | jsmin | safe }}</script>
 
@@ -52,6 +52,10 @@
 <body>
     <input type="checkbox" id="theme" name="theme" class="hidden-toggle"/>
     <input type="checkbox" id="preview" name="preview" class="hidden-toggle" />
+    <!-- capture the JS content as a Nunjucks variable -->
+    {% set js %}{% include "init-body.js" %}{% endset %}
+    <!-- feed it through our jsmin filter to minify -->
+    <script>{{ js | jsmin | safe }}</script>
 
     <div id="content">
 
