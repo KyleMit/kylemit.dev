@@ -1,5 +1,6 @@
 ---
 layout: default.njk
+title: about.md
 ---
 # Hello Hello 👋
 
