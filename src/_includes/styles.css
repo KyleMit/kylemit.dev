@@ -80,6 +80,8 @@ body a {
 body a:hover {
     color: inherit;
     text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: #ffffff8c;
 }
 h1 {
     margin-top: 0;
