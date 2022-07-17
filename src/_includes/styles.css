@@ -19,16 +19,12 @@ body, #content {
     grid-template-rows: auto 1fr auto;
 }
 header {
-    height: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 60px;
 }
 main {
     padding: 16px;
     overflow-y: auto;
-    height: calc(100vh - 74px);
+    height: calc(100vh - 84px);
 }
 main > * {
     height: 100%;
@@ -87,6 +83,29 @@ h1 {
     margin-top: 0;
 }
 
+/* header */
+header > .title-bar {
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > .editor-bar {
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.editor-tab {
+    font-size: 0.9em;
+    place-self: stretch;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
 /* toggles */
 .toggles {
     position: absolute;
@@ -138,15 +157,24 @@ h1 {
 
 /* theme (default dark) */
 #content,
-#content main {
+#content main,
+.editor-tab {
     background: var(--vscode-editor-background);
     color: var(--vscode-editor-foreground);
 }
+
 #theme:checked ~ #content,
-#theme:checked ~ #content main {
+#theme:checked ~ #content main,
+#theme:checked ~ #content .editor-tab {
     background: hsl(0deg 0% 99%);
     color: #161819;
 }
+
+#content .title-bar {background: #323233;}
+#content .editor-bar {background: #252526;}
+#theme:checked ~ #content .title-bar { background: #dddddd; }
+#theme:checked ~ #content .editor-bar { background: #f3f3f3; }
+
 /* syntax highlighting */
 .language-md .important    { font-weight: bold; }
 
@@ -276,7 +304,7 @@ main::-webkit-scrollbar-thumb {
 }
 
 @media screen and (min-width: 960px) {
-    main {
+    #preview:checked ~ #content main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
@@ -284,4 +312,4 @@ main::-webkit-scrollbar-thumb {
     #preview:checked ~ #content #editor-pane {
         display: block;
     }
- }
+}

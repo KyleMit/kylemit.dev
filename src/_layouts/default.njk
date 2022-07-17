@@ -56,18 +56,23 @@
     <div id="content">
 
         <header class="monaco-editor">
-            <span>
-                kylemit.dev
-                <span class="dirty-indicator">•</span>
-            </span>
-            <div class="toggles">
-                <label for="theme">
-                    {% include "icons/color-mode.svg" %}
-                </label>
+            <div class="title-bar">
+                <span>
+                    kylemit.dev
+                    <span class="dirty-indicator">•</span>
+                </span>
+                <div class="toggles">
+                    <label for="theme">
+                        {% include "icons/color-mode.svg" %}
+                    </label>
 
-                <label for="preview" >
-                    {% include "icons/open-preview.svg" %}
-                </label>
+                    <label for="preview" >
+                        {% include "icons/open-preview.svg" %}
+                    </label>
+                </div>
+            </div>
+            <div class="editor-bar">
+                <div class="editor-tab">About.md</div>
             </div>
         </header>
         <main>
