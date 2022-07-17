@@ -136,7 +136,8 @@ header > .editor-bar {
 .toggles label:hover {
     background: rgb(132 132 132 / 20%) !important;
 }
-#theme:checked ~ #content .toggles label {
+#theme:checked ~ #content label[for="theme"],
+#preview:checked ~ #content label[for="preview"] {
     background: rgb(132 132 132 / 20%);
 }
 .toggles [for="theme"] {
