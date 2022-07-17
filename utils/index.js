@@ -37,14 +37,15 @@ function linkifyMarkup(code) {
 
 function mobileReferenceLinks(code) {
     const reg = /\(<span class="token url">(.+?)<\/span>\)/g
-    const matches = [...code.matchAll(reg)]
-    const references = matches.map((m, i) => `<span class="d-sm d-sm-wrap"><span class="punctuation">[</span>${i+1}<span class="punctuation">]:</span> ${m[1]}</span>`).join("\n")
 
     let idx = 0;
     const replaced = code.replaceAll(reg, (el) => {
         idx++
         return `<span class="d-md">${el}</span><span class="d-sm">[<span class="token url">${idx}</span>]</span>`;
     })
+
+    const matches = [...code.matchAll(reg)]
+    const references = matches.map((m, i) => `<span class="d-sm d-sm-wrap"><span class="punctuation">[</span>${i+1}<span class="punctuation">]:</span> <span class="break-all">${m[1]}</span></span>`).join("\n")
 
     const output = `${replaced}
 ${references}`

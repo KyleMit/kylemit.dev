@@ -8,6 +8,8 @@ Personal bio and some links to other places I exist on the interwebs
 * transition preview toggle
 * add label tooltips to toggles
 * fix position for header and footer
+* add top editor group
+* add left activity bar
 * perfect lighthouse score
 
 * make editable on desktop
