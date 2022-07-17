@@ -1,6 +1,7 @@
 ---
 layout: default.njk
 title: about.md
+permalink: /index.html
 ---
 # Hello Hello 👋
 
