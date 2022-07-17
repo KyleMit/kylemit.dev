@@ -59,6 +59,10 @@ footer {
     font-size: 18px;
     line-height: 1.4;
 }
+#preview-pane img {
+    height: 128px;
+    width: 128px;
+}
 
 #editor-pane {
     max-width: 65rem;
