@@ -25,14 +25,10 @@ main {
     padding: 16px;
     overflow-y: auto;
     height: calc(100vh - 90px);
-}
-main > * {
-    height: 100%;
-}
-footer, .footer-placeholder {
-    height: 24px;
+    padding-bottom: 40px;
 }
 footer {
+    height: 24px;
     font-size: 13px;
     font-family: helvetica, sans-serif;
     color:white;
@@ -345,5 +341,11 @@ main::-webkit-scrollbar-thumb {
     }
     #preview:checked ~ #content #editor-pane {
         display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hide-xs {
+        display: none;
     }
 }

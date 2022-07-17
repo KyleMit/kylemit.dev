@@ -9,6 +9,8 @@ Personal bio and some links to other places I exist on the interwebs
 * add left activity bar
 * perfect lighthouse score
 * add social media thumbnails
+* ultra small
+
 
 * make editable on desktop
   * live preview
