@@ -102,6 +102,12 @@ header > .editor-bar {
     display: flex;
     align-items: center;
     padding: 0 10px;
+    gap: 8px;
+}
+.editor-tab svg {
+    height: 14px;
+    width: auto;
+    color: #755838;
 }
 
 /* toggles */

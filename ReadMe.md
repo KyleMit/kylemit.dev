@@ -5,12 +5,12 @@ Personal bio and some links to other places I exist on the interwebs
 
 ## Todo
 
+* persist state across reloads
 * slide transition preview
 * fix position for header and footer
 * add left activity bar
 * perfect lighthouse score
-* include markdown svg
-* persist state across reloads
+* add social media thumbnails
 
 * make editable on desktop
   * live preview
