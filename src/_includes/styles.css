@@ -29,8 +29,10 @@ main {
 main > * {
     height: 100%;
 }
-footer {
+footer, .footer-placeholder {
     height: 24px;
+}
+footer {
     font-size: 13px;
     font-family: helvetica, sans-serif;
     color:white;
