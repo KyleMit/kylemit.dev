@@ -6,14 +6,19 @@ Personal bio and some links to other places I exist on the interwebs
 ## Todo
 
 * slide transition preview
-* add left activity bar
 * perfect lighthouse score
+* add left activity bar
+  * work history
+  * projects
 
-* make editable on desktop
-  * live preview
-  * dirty indicator
-* add command pallette
-  * contact me
-* add terminal
-  * list repos
+* easter eggs
+  * add command pallette?
+  * add terminal?
+  * make editable on desktop?
+    * live preview
+    * dirty indicator
 
+
+* web admin
+  * redirect from <http://kylemitofsky.com/>
+  * add google search console
